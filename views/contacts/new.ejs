@@ -1,0 +1,32 @@
+<!-- views/contacts/new.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+  </head>
+  <body>
+    <%- include('../partials/nav') %>
+
+    <div class="contact contact-new">
+      <h2>신규</h2>
+      <form class="contact-form" action="/contacts" method="post">
+        <div>
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" value="" />
+          </div>
+          <div>
+            <label for="email">이메일</label>
+            <input type="text" id="email" name="email" value="" />
+            </div>
+            <div>
+              <label for="phone">핸드폰</label>
+              <input type="text" id="phone" name="phone" value="" />
+              </div>
+              <div>
+                <button type="submit">제출</button>
+                </div>
+        </form>
+      </div>
+  </body>
+</html>
